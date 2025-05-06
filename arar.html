@@ -1,1 +1,27 @@
-hallo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>the og </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+    <a-marker type="pattern" pattern-heart.patt">        
+    <a-image src="lucario.png" position="0 0 0" rotation="-90 0 0" width="2" height="2"></a-image>
+        <a-image src="riolu.png" position="-1.5 0 1" rotation="-90 0 0" width="1" height="1"></a-image>
+        <a-image src="minior.png"
+        position="1.7 2 0.5"
+        rotation="-90 0 0"
+        width="0.8" height="0.8"
+        animation="property: rotation; to: -90 360 0; loop: true; dur: 3000">
+</a-image>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
